@@ -1,33 +1,128 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arafat PM - offline-first password manager</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
-<h1>Arafat PM</h1>
-<p><small>A private, offline-first password manager for Android</small></p>
-<div class="card">
-<p>Arafat PM stores your usernames and passwords in a vault that is encrypted on your phone with
-AES-256-GCM. The key is protected by your master password (Argon2id) and, optionally, a 24-word recovery phrase.
-There are no ads, no analytics and no accounts. The developer cannot see your data.</p>
-</div>
-<h2>Download</h2>
-<div class="card">
-<p><a href="https://github.com/29arafat/arafat-pm-site/releases/latest/download/app-release.apk"><strong>Download the latest Android app (APK)</strong></a></p>
-<ol>
-<li>Tap the link on your phone. The APK downloads directly.</li>
-<li>Open the file. If Android asks, allow installs from your browser or file manager.</li>
-<li>Open Arafat PM and create your master password.</li>
-</ol>
-<p><small>After the first install the app updates itself when you open it. Every build is signed with the same key, so updates install over your existing app and keep your vault.</small></p>
-</div>
-<h2>Features</h2>
-<ul>
-<li>Master password, fingerprint unlock, automatic lock</li>
-<li>Folders per site or app, and a section for trading accounts (MT5 and other platforms)</li>
-<li>Strong password generator and autofill in other apps and websites</li>
-<li>Optional weekly encrypted backup to a hidden folder of your own Google Drive</li>
-</ul>
-<h2>Legal</h2>
-<p><a href="privacy.html">Privacy Policy</a></p>
-<h2>Contact</h2>
-<p><a href="mailto:29.arafat@gmail.com">29.arafat@gmail.com</a></p>
-</main></body></html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arafat Password Manager | Private offline password manager for Android</title>
+<meta name="description" content="Arafat Password Manager: an offline-first Android password manager with AES-256 encryption, smart autofill, strong password suggestions and encrypted Google Drive backup.">
+<meta name="theme-color" content="#050b1c">
+<meta property="og:title" content="Arafat Password Manager | Private offline password manager for Android"><meta property="og:description" content="Arafat Password Manager: an offline-first Android password manager with AES-256 encryption, smart autofill, strong password suggestions and encrypted Google Drive backup.">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+<noscript><style>html [data-l]{display:block!important}html span[data-l]{display:inline!important}</style></noscript>
+</head><body id="top">
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="index.html"><img src="assets/logo-sm.png" alt="Arafat Password Manager logo"><span>Arafat Password Manager</span></a>
+  <nav class="main" aria-label="Main">
+    <a class="hide-s" href="index.html#features"><span data-l="en">Features</span><span data-l="bn">ফিচার</span></a>
+    <a class="hide-s" href="index.html#security"><span data-l="en">Security</span><span data-l="bn">নিরাপত্তা</span></a>
+    <a class="hide-s" href="index.html#install"><span data-l="en">Install</span><span data-l="bn">ইন্সটল</span></a>
+    <a class="hide-s" href="manual.html"><span data-l="en">Manual</span><span data-l="bn">ম্যানুয়াল</span></a>
+    <a class="hide-s" href="index.html#developer"><span data-l="en">Developer</span><span data-l="bn">ডেভলপার</span></a>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="bn" aria-pressed="false">বাং</button></div>
+    <a class="btn sm" href="https://github.com/29arafat/arafat-pm-site/releases/latest/download/app-release.apk" download><span data-l="en">Download</span><span data-l="bn">ডাউনলোড</span></a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow"><i></i><span data-l="en">Offline-first · No servers · No ads</span><span data-l="bn">অফলাইন-ফার্স্ট · সার্ভার নেই · বিজ্ঞাপন নেই</span></span>
+    <h1><span class="grad">Arafat</span> Password Manager</h1>
+    <p class="lead"><span data-l="en">Your passwords, locked on your phone. Strong generator, smart autofill, trading-account vault and an encrypted Google Drive backup that only your master password can open.</span><span data-l="bn">আপনার পাসওয়ার্ড তালাবদ্ধ থাকবে আপনার ফোনেই। শক্তিশালী জেনারেটর, স্মার্ট অটোফিল, ট্রেডিং-অ্যাকাউন্ট ভল্ট এবং এমন এনক্রিপ্টেড গুগল ড্রাইভ ব্যাকআপ, যা শুধু আপনার মাস্টার পাসওয়ার্ড দিয়েই খোলে।</span></p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/29arafat/arafat-pm-site/releases/latest/download/app-release.apk" download>⬇ <span data-l="en">Download APK for Android</span><span data-l="bn">অ্যান্ড্রয়েডের জন্য APK ডাউনলোড</span></a>
+      <a class="btn ghost" href="manual.html">📖 <span data-l="en">User manual</span><span data-l="bn">ইউজার ম্যানুয়াল</span></a>
+    </div>
+    <p class="fine"><span data-l="en">Free · Android 8.0 or newer · One-tap download · Latest:</span><span data-l="bn">বিনামূল্যে · Android ৮.০ বা নতুন · এক ক্লিকে ডাউনলোড · সর্বশেষ:</span> <span id="relinfo">…</span></p>
+    <div class="chips">
+      <span class="chip">AES-256-GCM</span><span class="chip">Argon2id</span><span class="chip"><span data-l="en">Fingerprint</span><span data-l="bn">ফিঙ্গারপ্রিন্ট</span></span>
+      <span class="chip"><span data-l="en">Autofill</span><span data-l="bn">অটোফিল</span></span><span class="chip"><span data-l="en">Drive backup</span><span data-l="bn">ড্রাইভ ব্যাকআপ</span></span><span class="chip"><span data-l="en">Recovery phrase</span><span data-l="bn">রিকভারি ফ্রেজ</span></span>
+    </div>
+  </div>
+  <div class="phone-wrap"><div class="phone"><img src="assets/app-unlock.jpg" alt="Arafat Password Manager unlock screen" width="620" height="927"></div></div>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <div class="sec-head reveal"><span class="kicker"><span data-l="en">Features</span><span data-l="bn">ফিচার</span></span>
+    <h2><span data-l="en">Everything a password manager should do</span><span data-l="bn">একটি পাসওয়ার্ড ম্যানেজারের যা যা থাকা উচিত</span></h2>
+    <p><span data-l="en">Built for daily use: fast, tidy and private.</span><span data-l="bn">প্রতিদিনের ব্যবহারের জন্য তৈরি: দ্রুত, গোছানো ও ব্যক্তিগত।</span></p></div>
+  <div class="grid g3"><article class="card reveal"><div class="ico">🗂️</div><h3><span data-l="en">Folders for every site & app</span><span data-l="bn">প্রতিটি সাইট ও অ্যাপের আলাদা ফোল্ডার</span></h3><p><span data-l="en">One folder per site or app, with as many usernames and passwords as you need. Search, edit, and delete with ease.</span><span data-l="bn">একটি সাইট বা অ্যাপের জন্য একটি ফোল্ডার, ভেতরে যত খুশি ইউজারনেম ও পাসওয়ার্ড। সহজে খোঁজা, বদলানো ও মোছা যায়।</span></p></article><article class="card reveal"><div class="ico">⚡</div><h3><span data-l="en">Smart autofill</span><span data-l="bn">স্মার্ট অটোফিল</span></h3><p><span data-l="en">Works in Chrome and other browsers and in apps. Pick the right account, and it signs you in. Several accounts? Choose one.</span><span data-l="bn">Chrome-সহ অন্য ব্রাউজার ও অ্যাপে কাজ করে। সঠিক অ্যাকাউন্ট বেছে নিন, লগইন হয়ে যাবে। একাধিক অ্যাকাউন্ট থাকলে যেকোনো একটি বেছে নিন।</span></p></article><article class="card reveal"><div class="ico">🎲</div><h3><span data-l="en">Strong password suggestions</span><span data-l="bn">শক্তিশালী পাসওয়ার্ডের প্রস্তাব</span></h3><p><span data-l="en">Creating an account? Arafat PM suggests a long, unique password and saves it with your username after you sign up.</span><span data-l="bn">নতুন অ্যাকাউন্ট খুলছেন? Arafat PM লম্বা ও ইউনিক পাসওয়ার্ড প্রস্তাব করে এবং সাইন-আপের পর ইউজারনেমসহ সেভ করে।</span></p></article><article class="card reveal"><div class="ico">🔄</div><h3><span data-l="en">Auto-update on reset</span><span data-l="bn">রিসেটে অটো আপডেট</span></h3><p><span data-l="en">Changed a password on a site? The app offers to update it here, and keeps the last 5 old passwords as history.</span><span data-l="bn">কোনো সাইটে পাসওয়ার্ড বদলালে অ্যাপ এখানেও আপডেট করার প্রস্তাব দেয়। আগের ৫টি পাসওয়ার্ড ইতিহাসে থাকে।</span></p></article><article class="card reveal"><div class="ico">📈</div><h3><span data-l="en">Trading accounts</span><span data-l="bn">ট্রেডিং অ্যাকাউন্ট</span></h3><p><span data-l="en">A dedicated section for MT5 (add cTrader, MT4 or any platform): vendor, account name and number, password, server, account type.</span><span data-l="bn">MT5-এর জন্য আলাদা সেকশন (cTrader, MT4 বা যেকোনো প্ল্যাটফর্ম যোগ করা যায়): ভেন্ডর, অ্যাকাউন্টের নাম ও নম্বর, পাসওয়ার্ড, সার্ভার, অ্যাকাউন্ট টাইপ।</span></p></article><article class="card reveal"><div class="ico">☁️</div><h3><span data-l="en">Encrypted Google Drive backup</span><span data-l="bn">এনক্রিপ্টেড গুগল ড্রাইভ ব্যাকআপ</span></h3><p><span data-l="en">Weekly backup to your own Drive's hidden app folder. Without your master password, the file is just noise.</span><span data-l="bn">আপনার নিজের Drive-এর লুকানো অ্যাপ-ফোল্ডারে সাপ্তাহিক ব্যাকআপ। মাস্টার পাসওয়ার্ড ছাড়া ফাইলটি অর্থহীন তথ্য মাত্র।</span></p></article><article class="card reveal"><div class="ico">🔑</div><h3><span data-l="en">24-word recovery phrase</span><span data-l="bn">২৪ শব্দের রিকভারি ফ্রেজ</span></h3><p><span data-l="en">Optional. Add it whenever you like, or never. It is your second key if the master password is ever forgotten.</span><span data-l="bn">ঐচ্ছিক। যখন ইচ্ছা যোগ করুন, না চাইলে নেবেন না। মাস্টার পাসওয়ার্ড ভুলে গেলে এটি আপনার দ্বিতীয় চাবি।</span></p></article><article class="card reveal"><div class="ico">👆</div><h3><span data-l="en">Fingerprint, with a weekly check</span><span data-l="bn">ফিঙ্গারপ্রিন্ট, সাপ্তাহিক যাচাইসহ</span></h3><p><span data-l="en">Fast unlock with biometrics. Once a week the master password is required, so you never forget it.</span><span data-l="bn">বায়োমেট্রিক দিয়ে দ্রুত আনলক। সপ্তাহে একবার মাস্টার পাসওয়ার্ড বাধ্যতামূলক, যাতে কখনো ভুলে না যান।</span></p></article><article class="card reveal"><div class="ico">📋</div><h3><span data-l="en">One-tap copy</span><span data-l="bn">এক ট্যাপে কপি</span></h3><p><span data-l="en">Copy any username or password with one tap. The clipboard is cleared automatically after 30 seconds.</span><span data-l="bn">যেকোনো ইউজারনেম বা পাসওয়ার্ড এক ট্যাপে কপি। ক্লিপবোর্ড ৩০ সেকেন্ড পর নিজে থেকে পরিষ্কার হয়।</span></p></article></div>
+</div></section>
+
+<section id="security" class="secure"><div class="wrap">
+  <div class="sec-head reveal"><span class="kicker"><span data-l="en">Security</span><span data-l="bn">নিরাপত্তা</span></span>
+    <h2><span data-l="en">Security you can check, layer by layer</span><span data-l="bn">স্তরে স্তরে নিরাপত্তা, যা যাচাই করা যায়</span></h2>
+    <p><span data-l="en">No single feature is trusted alone. Each layer assumes another one could fail.</span><span data-l="bn">শুধু একটি ফিচারের ওপর ভরসা নয়। প্রতিটি স্তর ধরে নেয় অন্য স্তর ব্যর্থ হতে পারে।</span></p></div>
+  <div class="grid g3"><article class="card reveal"><div class="ico">🛡️</div><h3><span data-l="en">AES-256-GCM encryption</span><span data-l="bn">AES-256-GCM এনক্রিপশন</span></h3><p><span data-l="en">Your whole vault is one encrypted file. Any tampering is detected and the file is rejected.</span><span data-l="bn">পুরো ভল্ট একটিই এনক্রিপ্টেড ফাইল। কেউ বদলালে ধরা পড়ে এবং ফাইলটি প্রত্যাখ্যাত হয়।</span></p></article><article class="card reveal"><div class="ico">🧮</div><h3><span data-l="en">Argon2id key stretching</span><span data-l="bn">Argon2id কী-স্ট্রেচিং</span></h3><p><span data-l="en">Your master password is hardened with Argon2id (64 MiB memory, 6 passes), which makes guessing attacks slow and costly.</span><span data-l="bn">মাস্টার পাসওয়ার্ড Argon2id (৬৪ MiB মেমরি, ৬ পাস) দিয়ে শক্ত করা হয়, ফলে আন্দাজ করে ভাঙা ধীর ও ব্যয়বহুল।</span></p></article><article class="card reveal"><div class="ico">🚫</div><h3><span data-l="en">Master password never stored</span><span data-l="bn">মাস্টার পাসওয়ার্ড কোথাও জমা থাকে না</span></h3><p><span data-l="en">It is never saved or sent anywhere. Only you know it. There is no server and no account to hack.</span><span data-l="bn">এটি কোথাও জমা বা পাঠানো হয় না। শুধু আপনি জানেন। কোনো সার্ভার বা অ্যাকাউন্ট নেই যা হ্যাক হবে।</span></p></article><article class="card reveal"><div class="ico">⏱️</div><h3><span data-l="en">3 wrong tries = 10-minute lock</span><span data-l="bn">৩ বার ভুল = ১০ মিনিট লক</span></h3><p><span data-l="en">Three wrong attempts in a row (password, fingerprint, recovery phrase) lock the app for 10 minutes. Then you get 3 more tries.</span><span data-l="bn">পরপর তিনবার ভুল (পাসওয়ার্ড, ফিঙ্গারপ্রিন্ট, রিকভারি ফ্রেজ) হলে অ্যাপ ১০ মিনিট লক। তারপর আবার ৩ সুযোগ।</span></p></article><article class="card reveal"><div class="ico">🔐</div><h3><span data-l="en">Master password for sensitive actions</span><span data-l="bn">স্পর্শকাতর কাজে মাস্টার পাসওয়ার্ড</span></h3><p><span data-l="en">Deleting accounts or folders, changing the master password, and creating a recovery phrase all need the master password (the current one, for changes).</span><span data-l="bn">অ্যাকাউন্ট বা ফোল্ডার মোছা, মাস্টার পাসওয়ার্ড বদল এবং রিকভারি ফ্রেজ তৈরি, সবকিছুতেই মাস্টার পাসওয়ার্ড লাগে (বদলাতে হলে বর্তমানটি)।</span></p></article><article class="card reveal"><div class="ico">📵</div><h3><span data-l="en">Screenshot protection</span><span data-l="bn">স্ক্রিনশট সুরক্ষা</span></h3><p><span data-l="en">Screenshots and screen recording are blocked by default (you can turn this off in Settings). Your vault stays out of the recent-apps preview too.</span><span data-l="bn">ডিফল্টভাবে স্ক্রিনশট ও স্ক্রিন রেকর্ড বন্ধ (সেটিংসে বন্ধ করা যায়)। রিসেন্ট অ্যাপের প্রিভিউতেও ভল্ট দেখা যায় না।</span></p></article><article class="card reveal"><div class="ico">🧹</div><h3><span data-l="en">Clipboard auto-clear</span><span data-l="bn">ক্লিপবোর্ড অটো-ক্লিয়ার</span></h3><p><span data-l="en">Copied secrets are marked sensitive and removed after 30 seconds, only if they are still ours.</span><span data-l="bn">কপি করা গোপন তথ্য সংবেদনশীল হিসেবে চিহ্নিত হয় এবং ৩০ সেকেন্ড পর মুছে যায়।</span></p></article><article class="card reveal"><div class="ico">🔒</div><h3><span data-l="en">Auto-lock</span><span data-l="bn">অটো-লক</span></h3><p><span data-l="en">The vault locks when you leave the app for a while and instantly when the screen turns off.</span><span data-l="bn">কিছুক্ষণ অ্যাপের বাইরে থাকলে এবং স্ক্রিন বন্ধ হলে সঙ্গে সঙ্গে ভল্ট লক হয়ে যায়।</span></p></article><article class="card reveal"><div class="ico">🎯</div><h3><span data-l="en">Strict autofill matching</span><span data-l="bn">কড়া অটোফিল মিল</span></h3><p><span data-l="en">Accounts are filled only into sites and apps you linked. No fuzzy guessing, so a look-alike fake site gets nothing.</span><span data-l="bn">শুধু আপনার লিংক করা সাইট ও অ্যাপেই অ্যাকাউন্ট বসে। আন্দাজে মেলানো হয় না, তাই নকল সাইট কিছুই পায় না।</span></p></article><article class="card reveal"><div class="ico">☁️</div><h3><span data-l="en">Backup that only you can open</span><span data-l="bn">শুধু আপনি খুলতে পারেন এমন ব্যাকআপ</span></h3><p><span data-l="en">Only the already-encrypted file is uploaded, to a hidden folder only this app can see. If someone hacks your Google account, they still cannot read it.</span><span data-l="bn">শুধু আগে থেকে এনক্রিপ্ট করা ফাইল আপলোড হয়, লুকানো ফোল্ডারে, যা শুধু এই অ্যাপ দেখতে পায়। আপনার Google অ্যাকাউন্ট হ্যাক হলেও ফাইলটি পড়া যায় না।</span></p></article><article class="card reveal"><div class="ico">🌐</div><h3><span data-l="en">No servers, ads or trackers</span><span data-l="bn">কোনো সার্ভার, বিজ্ঞাপন বা ট্র্যাকার নেই</span></h3><p><span data-l="en">Offline-first. The internet is used only for the optional Drive backup and for checking app updates.</span><span data-l="bn">অফলাইন-ফার্স্ট। ইন্টারনেট ব্যবহার হয় শুধু ঐচ্ছিক Drive ব্যাকআপ ও অ্যাপ আপডেট দেখতে।</span></p></article><article class="card reveal"><div class="ico">✅</div><h3><span data-l="en">Signed updates</span><span data-l="bn">সইকৃত আপডেট</span></h3><p><span data-l="en">Android installs an update only if it is signed with the same developer key as your installed app. A fake update cannot get in.</span><span data-l="bn">Android শুধু সেই আপডেটই ইনস্টল করে যা আপনার ইনস্টল করা অ্যাপের একই ডেভলপার-চাবিতে সই করা। নকল আপডেট ঢুকতে পারে না।</span></p></article></div>
+  <div class="band reveal" style="margin-top:22px"><span data-l="en"><strong>Be honest with yourself:</strong> a vault is only as strong as your master password. Use a long one you can remember. If you forget it and never made a recovery phrase, nobody (including the developer) can open your vault.</span><span data-l="bn"><strong>নিজের কাছে সৎ থাকুন:</strong> ভল্ট ততটুকুই শক্ত, যতটুকু আপনার মাস্টার পাসওয়ার্ড। লম্বা ও মনে রাখার মতো পাসওয়ার্ড দিন। ভুলে গেলে এবং রিকভারি ফ্রেজ না থাকলে কেউ (ডেভলপারও) ভল্ট খুলতে পারবে না।</span></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="sec-head reveal"><span class="kicker"><span data-l="en">How it works</span><span data-l="bn">কীভাবে কাজ করে</span></span>
+    <h2><span data-l="en">Simple on the outside, strong inside</span><span data-l="bn">বাইরে সহজ, ভেতরে শক্ত</span></h2></div>
+  <div class="grid g3">
+    <article class="card reveal"><div class="ico">1</div><h3><span data-l="en">One master password</span><span data-l="bn">একটি মাস্টার পাসওয়ার্ড</span></h3><p><span data-l="en">You remember one password. It is stretched with Argon2id and unlocks a random vault key, which opens the encrypted vault.</span><span data-l="bn">আপনি একটি পাসওয়ার্ড মনে রাখেন। Argon2id তাকে শক্ত করে একটি এলোমেলো ভল্ট-কী খোলে, যা এনক্রিপ্টেড ভল্ট খোলে।</span></p></article>
+    <article class="card reveal"><div class="ico">2</div><h3><span data-l="en">Autofill signs you in</span><span data-l="bn">অটোফিল লগইন করে দেয়</span></h3><p><span data-l="en">On a login page tap “Arafat PM”, unlock, pick the account. On a sign-up page it suggests a strong password and saves it after you submit.</span><span data-l="bn">লগইন পেজে “Arafat PM” চাপুন, আনলক করুন, অ্যাকাউন্ট বেছে নিন। সাইন-আপ পেজে শক্তিশালী পাসওয়ার্ড প্রস্তাব করে এবং সাবমিটের পর সেভ করে।</span></p></article>
+    <article class="card reveal"><div class="ico">3</div><h3><span data-l="en">Safe copy in the cloud</span><span data-l="bn">ক্লাউডে নিরাপদ কপি</span></h3><p><span data-l="en">Weekly, the encrypted vault file is copied to your Drive. A new phone? Install, restore, and unlock with your master password.</span><span data-l="bn">প্রতি সপ্তাহে এনক্রিপ্টেড ভল্ট ফাইল আপনার Drive-এ কপি হয়। নতুন ফোন? ইন্সটল করুন, রিস্টোর করুন, মাস্টার পাসওয়ার্ড দিয়ে আনলক করুন।</span></p></article>
+  </div>
+  <p style="margin-top:22px"><a class="btn ghost" href="manual.html"><span data-l="en">Read the full user manual →</span><span data-l="bn">পুরো ইউজার ম্যানুয়াল পড়ুন →</span></a></p>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <div class="sec-head reveal"><span class="kicker"><span data-l="en">Install guide</span><span data-l="bn">ইন্সটল গাইড</span></span>
+    <h2><span data-l="en">Install in 2 minutes</span><span data-l="bn">২ মিনিটে ইন্সটল</span></h2>
+    <p><span data-l="en">Step by step, with what to expect on your screen.</span><span data-l="bn">ধাপে ধাপে, স্ক্রিনে কী দেখবেন সহ।</span></p></div>
+  <ol class="steps"><li class="reveal"><b><span data-l="en">Download the APK</span><span data-l="bn">APK ডাউনলোড করুন</span></b><span class="d"><span data-l="en">On your Android phone, tap “Download APK”. The file app-release.apk is saved to Downloads. Use Chrome or any browser.</span><span data-l="bn">আপনার অ্যান্ড্রয়েড ফোনে “APK ডাউনলোড” চাপুন। app-release.apk ফাইলটি Downloads-এ সেভ হবে। Chrome বা যেকোনো ব্রাউজার ব্যবহার করতে পারেন।</span></span></li><li class="reveal"><b><span data-l="en">Open the file</span><span data-l="bn">ফাইলটি খুলুন</span></b><span class="d"><span data-l="en">Tap the download notification, or open Files → Downloads → app-release.apk.</span><span data-l="bn">ডাউনলোডের নোটিফিকেশনে চাপুন, অথবা Files → Downloads → app-release.apk খুলুন।</span></span></li><li class="reveal"><b><span data-l="en">Allow installing from this source</span><span data-l="bn">এই উৎস থেকে ইন্সটলের অনুমতি দিন</span></b><span class="d"><span data-l="en">Android asks permission because the app is not from the Play Store. Tap “Settings”, switch on “Allow from this source” for your browser or file manager, then go back.</span><span data-l="bn">অ্যাপটি Play Store থেকে নয় বলে Android অনুমতি চায়। “Settings” চাপুন, আপনার ব্রাউজার বা ফাইল ম্যানেজারের জন্য “Allow from this source” চালু করুন, তারপর ফিরে আসুন।</span></span></li><li class="reveal"><b><span data-l="en">Tap Install</span><span data-l="bn">Install চাপুন</span></b><span class="d"><span data-l="en">If Play Protect shows a warning, tap “More details” → “Install anyway”. The app is signed by its developer but is not yet reviewed by Google Play.</span><span data-l="bn">Play Protect সতর্কতা দেখালে “More details” → “Install anyway” চাপুন। অ্যাপটি ডেভলপারের সই করা, তবে এখনো Google Play-তে যাচাই হয়নি।</span></span></li><li class="reveal"><b><span data-l="en">Create your master password</span><span data-l="bn">মাস্টার পাসওয়ার্ড বানান</span></b><span class="d"><span data-l="en">Open Arafat Password Manager and choose a long master password you will never forget. This is the only key to your vault. Optionally add a 24-word recovery phrase and write it on paper.</span><span data-l="bn">Arafat Password Manager খুলে একটি লম্বা মাস্টার পাসওয়ার্ড দিন, যা কখনো ভুলবেন না। এটিই ভল্টের একমাত্র চাবি। চাইলে ২৪ শব্দের রিকভারি ফ্রেজ যোগ করে কাগজে লিখে রাখুন।</span></span></li><li class="reveal"><b><span data-l="en">Turn on autofill</span><span data-l="bn">অটোফিল চালু করুন</span></b><span class="d"><span data-l="en">In the app open Settings → “Turn on autofill” and choose “Arafat PM” in Android’s list. In Chrome: Settings → Autofill services → “Autofill using another service”.</span><span data-l="bn">অ্যাপের Settings → “Turn on autofill” চেপে Android-এর তালিকায় “Arafat PM” বেছে নিন। Chrome-এ: Settings → Autofill services → “Autofill using another service”।</span></span></li><li class="reveal"><b><span data-l="en">Turn on Google Drive backup (optional)</span><span data-l="bn">গুগল ড্রাইভ ব্যাকআপ চালু করুন (ঐচ্ছিক)</span></b><span class="d"><span data-l="en">Settings → Google Drive backup → Connect Google Drive, choose your Google account, and allow access to the app’s hidden folder only. Switch on weekly backup.</span><span data-l="bn">Settings → Google Drive backup → Connect Google Drive চাপুন, আপনার Google অ্যাকাউন্ট বেছে শুধু অ্যাপের লুকানো ফোল্ডারের অনুমতি দিন। সাপ্তাহিক ব্যাকআপ চালু করুন।</span></span></li></ol>
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card reveal"><h3><span data-l="en">Updating</span><span data-l="bn">আপডেট</span></h3><p><span data-l="en">Open the app and it checks for a new version. If one exists, follow the Update prompt. Your vault is kept, because every build is signed with the same key.</span><span data-l="bn">অ্যাপ খুললে নতুন ভার্সন খোঁজে। থাকলে Update-এর নির্দেশ অনুসরণ করুন। ভল্ট থেকে যায়, কারণ প্রতিটি বিল্ড একই চাবিতে সই করা।</span></p></div>
+    <div class="card reveal"><h3><span data-l="en">New phone or reinstall</span><span data-l="bn">নতুন ফোন বা আবার ইন্সটল</span></h3><p><span data-l="en">Install the APK, then tap “Restore from Google Drive” on the first screen. Sign in with the same Google account, pick the newest backup, and unlock with your old master password.</span><span data-l="bn">APK ইন্সটল করে প্রথম স্ক্রিনে “Restore from Google Drive” চাপুন। একই Google অ্যাকাউন্টে সাইন-ইন করে সর্বশেষ ব্যাকআপ বেছে নিন, পুরোনো মাস্টার পাসওয়ার্ড দিয়ে আনলক করুন।</span></p></div>
+  </div>
+  <p class="note"><span data-l="en">Only download the app from this page. Anyone can host a file with the same name, but only this developer’s signed build can update your installed app.</span><span data-l="bn">অ্যাপ শুধু এই পেজ থেকে নামান। একই নামের ফাইল যে কেউ দিতে পারে, কিন্তু শুধু এই ডেভলপারের সই করা বিল্ডই আপনার ইনস্টল করা অ্যাপ আপডেট করতে পারে।</span></p>
+  <p style="margin-top:20px"><a class="btn" href="https://github.com/29arafat/arafat-pm-site/releases/latest/download/app-release.apk" download>⬇ <span data-l="en">Download APK</span><span data-l="bn">APK ডাউনলোড</span></a></p>
+</div></section>
+
+<section id="developer"><div class="wrap">
+  <div class="sec-head reveal"><span class="kicker"><span data-l="en">The developer</span><span data-l="bn">ডেভলপার</span></span>
+    <h2><span data-l="en">Built by one person, for everyday safety</span><span data-l="bn">একজনের হাতে তৈরি, প্রতিদিনের নিরাপত্তার জন্য</span></h2></div>
+  <div class="dev reveal">
+    <div class="avatar"><img src="assets/developer.jpg" alt="Yasin Arafat, developer of Arafat Password Manager" width="640" height="640"></div>
+    <div>
+      <span class="role"><span data-l="en">Developer &amp; Designer</span><span data-l="bn">ডেভলপার ও ডিজাইনার</span></span>
+      <h2>Yasin Arafat</h2>
+      <p class="muted" style="max-width:52ch"><span data-l="en">Designed and developed Arafat Password Manager. Questions, bugs or ideas are welcome.</span><span data-l="bn">Arafat Password Manager ডিজাইন ও ডেভলপ করেছেন। প্রশ্ন, বাগ বা আইডিয়া জানাতে পারেন।</span></p>
+      <div class="contact">
+        <a href="mailto:29.arafat@gmail.com"><span>✉️</span><span><small>Email</small>29.arafat@gmail.com</span></a>
+        <a href="https://yasin-arafat.pages.dev" target="_blank" rel="noopener"><span>🌐</span><span><small>Website</small>yasin-arafat.pages.dev</span></a>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <a class="brand" href="index.html"><img src="assets/logo-sm.png" alt=""><span>Arafat Password Manager</span></a>
+      <p class="about" style="margin-top:14px"><span data-l="en">A private, offline-first password manager for Android. Your vault lives only on your phone.</span><span data-l="bn">অ্যান্ড্রয়েডের জন্য একটি ব্যক্তিগত, অফলাইন-ফার্স্ট পাসওয়ার্ড ম্যানেজার। আপনার ভল্ট থাকে শুধু আপনার ফোনে।</span></p>
+    </div>
+    <div><h4><span data-l="en">Explore</span><span data-l="bn">দেখুন</span></h4>
+      <a href="index.html#features"><span data-l="en">Features</span><span data-l="bn">ফিচার</span></a>
+      <a href="index.html#security"><span data-l="en">Security</span><span data-l="bn">নিরাপত্তা</span></a>
+      <a href="manual.html"><span data-l="en">User manual</span><span data-l="bn">ইউজার ম্যানুয়াল</span></a>
+      <a href="index.html#install"><span data-l="en">Install guide</span><span data-l="bn">ইন্সটল গাইড</span></a></div>
+    <div><h4><span data-l="en">Get the app</span><span data-l="bn">অ্যাপ নিন</span></h4>
+      <a href="https://github.com/29arafat/arafat-pm-site/releases/latest/download/app-release.apk" download><span data-l="en">Download APK</span><span data-l="bn">APK ডাউনলোড</span></a>
+      <a href="https://github.com/29arafat/arafat-pm-site/releases"><span data-l="en">All versions</span><span data-l="bn">সব ভার্সন</span></a>
+      <a href="privacy.html"><span data-l="en">Privacy policy</span><span data-l="bn">প্রাইভেসি পলিসি</span></a></div>
+    <div><h4><span data-l="en">Developer</span><span data-l="bn">ডেভলপার</span></h4>
+      <a href="mailto:29.arafat@gmail.com">29.arafat@gmail.com</a>
+      <a href="https://yasin-arafat.pages.dev" target="_blank" rel="noopener">yasin-arafat.pages.dev</a>
+      <a style="color:var(--text);font-weight:700">Yasin Arafat</a></div>
+  </div>
+  <div class="legal">
+    <span>© 2026 Yasin Arafat. <span data-l="en">All rights reserved.</span><span data-l="bn">সর্বস্বত্ব সংরক্ষিত।</span></span>
+    <span><span data-l="en">Not affiliated with Google. Android is a trademark of Google LLC.</span><span data-l="bn">Google-এর সঙ্গে সম্পর্কিত নয়। Android, Google LLC-এর ট্রেডমার্ক।</span></span>
+  </div>
+</div></footer>
+<script src="site.js"></script>
+</body></html>
