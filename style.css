@@ -1,0 +1,6 @@
+body{margin:0;background:#040e24;color:#e8f1ff;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
+main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:20px;margin-top:32px;color:#2ec5ff}
+p,li{color:#c9d8f0}a{color:#22e5ff}
+.card{background:#0e2650;border:1px solid #3a5a8c;border-radius:20px;padding:18px 22px;margin:18px 0}
+small{color:#a9bedd}
